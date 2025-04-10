@@ -1,0 +1,36 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --pink-light: #fce4ec;   /* very soft */
+  --pink-main: #f8bbd0;    /* delicate rose */
+  --pink-dark: #f48fb1;    /* slightly bolder */
+  --accent-gold: #fdd835;  /* optional accent */
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+

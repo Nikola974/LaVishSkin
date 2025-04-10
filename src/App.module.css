@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  max-width: 100%;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("./assets/studio_background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutUs {
+  height: 1200px;
+  background-color: brown;
+}
+.services {
+  height: 600px;
+  background-color: lawngreen;
+}
+.contacts {
+  height: 600px;
+  background-color: aqua;
+}
+
+.menuLink {
+  max-width: 1500px;
+  text-decoration: none;
+  display: inline;
+  padding: 20px 20px;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+}
+
+.top-btn-positon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  background-color: transparent;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+
+.top-btn-positon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--pink-dark);
+  border: 2px solid var(--pink-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}

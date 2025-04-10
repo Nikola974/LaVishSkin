@@ -1,0 +1,41 @@
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsTopImg img{
+    max-width: 400px;
+    max-height: 450px;
+}
+
+.aboutUsTopInfo{
+    max-width: 600px;
+}
+
+.aboutUsBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsBottomImg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.aboutUsBottomImg img{
+    max-width: 400px;
+    max-height: 400px;
+}
