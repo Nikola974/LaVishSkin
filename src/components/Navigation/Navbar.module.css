@@ -8,6 +8,7 @@
     overflow: hidden;
     background-color: rgba(253, 253, 253, 0.9);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
   }
   
   .menu {

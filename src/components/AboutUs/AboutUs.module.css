@@ -1,41 +1,140 @@
-.aboutUs{
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutUsTop {
+    padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutUsTopImg img {
+  max-width: 400px;
+  max-height: 450px;
+}
+
+.aboutUsTopInfo {
+  max-width: 600px;
+}
+
+.aboutUsBottom {
+    padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutUsBottom h3{
+    padding: 40px 0px;
+}
+
+.aboutUsBottomImg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 45px;
+}
+
+.aboutUsBottomSkin,
+.aboutUsBottomTeam,
+.aboutUsBottomLaser {
+  width: 370px;
+  max-width: 400px;
+  height: 420px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsBottomSkin {
+  background-image: url("../../assets/skin.jpg");
+}
+
+.aboutUsBottomTeam {
+  background-image: url("../../assets/ourTeam.jpeg");
+  background-size: cover;
+}
+
+.aboutUsBottomLaser {
+  background-image: url("../../assets/laser.jpeg");
+}
+
+.aboutUsBottomImg h4 {
+  overflow: hidden;
+  background-color: rgba(222, 222, 222, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsBottomInfo {
+    overflow: hidden;
+    background-color: rgba(222, 222, 222, 0.7);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.aboutUsTop{
+.aboutUsBottomInfo p {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.aboutUsInfoBlock {
+    position: relative;
+    height: 450px; /* или колкото трябва да е блока */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
+    justify-content: center;
+    overflow: hidden;
+  }
+  
 
-.aboutUsTopImg img{
-    max-width: 400px;
-    max-height: 450px;
-}
-
-.aboutUsTopInfo{
-    max-width: 600px;
-}
-
-.aboutUsBottom{
+  .title,
+  .text {
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.aboutUsBottomImg{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.aboutUsBottomImg img{
-    max-width: 400px;
-    max-height: 400px;
-}
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(222, 222, 222, 0.7);
+    transition: opacity 0.4s ease;
+    z-index: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .invisible {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  

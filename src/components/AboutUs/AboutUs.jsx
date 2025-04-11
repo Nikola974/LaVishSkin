@@ -1,45 +1,12 @@
-import aboutUsImg from "../../assets/aboutUsIntro.jpg";
-import candelaImg from "../../assets/candela.jpg";
-import skinTypeImg from "../../assets/skin.jpg";
-import ourTeamImg from "../../assets/ourTeam.jpeg";
-import styles from "./AboutUs.module.css";
 import stylesApp from "../../App.module.css";
+import AboutUsTop from "./AboutUsTop";
+import AboutUsBottom from "./AboutUsBottom";
 
 export default function AboutUs({ aboutUsRef }) {
   return (
     <div ref={aboutUsRef} className={stylesApp.aboutUs}>
-      <div className={styles.aboutUsTop}>
-        <div className={styles.aboutUsTopImg}>
-          <img src={aboutUsImg} alt="About us" />
-        </div>
-        <div className={styles.aboutUsTopInfo}>
-          <h3>
-            Добре дошли в Lá Vish Skin, <br /> мястото, където кожата Ви
-            заслужава най-доброто!
-          </h3>
-          <p>
-            В Lá Vish Skin вярваме, че красотата започва с увереността.
-            Нашето студио е създадено с мисъл за Вас – за да се чувствате не
-            само красиви, но и специални. Предлагаме висококачествени
-            лазерни процедури, съобразени с най-новите технологии и
-            стандарти, за да осигурим ефективни и дълготрайни резултати.
-          </p>
-        </div>
-      </div>
-      <div className={styles.aboutUsBottom}>
-        <h3>Какво ни прави различни:</h3>
-        <div className={styles.aboutUsBottomImg}>
-          <div className={styles.aboutUsBottomTitle}>
-            <img src={skinTypeImg} alt="Skin types" />
-          </div>
-          <div className={styles.aboutUsBottomTitle}>
-            <img src={ourTeamImg} alt="Our team" />
-          </div>
-          <div className={styles.aboutUsBottomTitle}>
-            <img src={candelaImg} alt="Candela laser" />
-          </div>
-        </div>
-      </div>
+      <AboutUsTop />
+      <AboutUsBottom />
     </div>
   );
 }
