@@ -1,0 +1,84 @@
+.servicesContainer {
+
+  background-image: url("../../assets/chair.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+}
+.imageContainer,
+.servicesInfoContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesInfoContainer {
+    flex-direction: column;
+}
+
+.servicesInfoContainer h2 {
+    padding-bottom: 80px;
+}
+
+.imageContainer img {
+  max-width: 80%;
+  max-height: 600px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.toggleButtons {
+  margin-bottom: 1rem;
+}
+
+.toggleButtons button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.toggleButtons .active {
+  background-color: black;
+  color: white;
+}
+
+.priceList {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.toggleService {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.itemsWrapper {
+    overflow: hidden;
+    transition: max-height 1s ease-in, opacity 0.6s ease, transform 0.9s ease;
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+
+  .shown {
+    max-height: 350px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hiden {
+    max-height: 0;
+    opacity: 1;
+    transform: translateY(-10px);
+  }
