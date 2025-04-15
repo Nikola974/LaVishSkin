@@ -6,10 +6,12 @@
 }
 
 .aboutUsTop {
-    padding-top: 40px;
+  padding: 40px 0px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: rgba(222, 222, 222, 0.7);
+  margin-top: 90px;
 }
 
 .aboutUsTopImg img {
@@ -22,7 +24,6 @@
 }
 
 .aboutUsBottom {
-    padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;

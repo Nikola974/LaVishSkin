@@ -17,11 +17,8 @@
 }
 .aboutUs {
   height: 1200px;
-  background-color: brown;
-}
-.services {
-  height: 600px;
-  background-color: lawngreen;
+  background-color: white;
+  padding-bottom: 40px;
 }
 .contacts {
   height: 600px;
