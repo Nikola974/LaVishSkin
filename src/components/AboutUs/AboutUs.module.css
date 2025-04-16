@@ -15,6 +15,7 @@
 }
 
 .aboutUsTopImg img {
+  width: 100%;
   max-width: 400px;
   max-height: 450px;
 }
@@ -30,8 +31,8 @@
   justify-content: space-evenly;
 }
 
-.aboutUsBottom h3{
-    padding: 40px 0px;
+.aboutUsBottom h3 {
+  padding: 40px 0px;
 }
 
 .aboutUsBottomImg {
@@ -83,59 +84,79 @@
 }
 
 .aboutUsBottomInfo {
-    overflow: hidden;
-    background-color: rgba(222, 222, 222, 0.7);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+  overflow: hidden;
+  background-color: rgba(222, 222, 222, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutUsBottomInfo p {
-    padding: 0 10px;
-    font-size: 20px;
+  padding: 0 10px;
+  font-size: 20px;
 }
 
 .aboutUsInfoBlock {
-    position: relative;
-    height: 450px; /* или колкото трябва да е блока */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
+  position: relative;
+  height: 450px; /* или колкото трябва да е блока */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
-  .title,
-  .text {
-    position: absolute;
-    top: 50;
-    left: 0;
+.title,
+.text {
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(222, 222, 222, 0.7);
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (max-width: 1050px) {
+  .aboutUsBottomImg {
     width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(222, 222, 222, 0.7);
-    transition: opacity 0.4s ease;
-    z-index: 1;
   }
-  
-  .hidden {
-    opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .aboutUsTop {
+    flex-direction: column-reverse;
   }
-  
-  .invisible {
-    opacity: 0;
-    pointer-events: none;
+  .aboutUsBottomImg {
+    flex-direction: column;
+    width: 70%;
   }
-  
-  .visible {
-    opacity: 1;
+  .aboutUsBottomSkin,
+  .aboutUsBottomTeam,
+  .aboutUsBottomLaser {
+    max-width: 100%;
+    height: 260px;
   }
-  
+}

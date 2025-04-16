@@ -7,6 +7,7 @@ import MobileMenu from "./components/DropDownMenu/MobileMenu.jsx";
 import NavigationBar from "./components/Navigation/NavigationBar.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Services from "./components/Services/Services.jsx";
+import Contacts from "./components/Contacts/Contacts.jsx";
 
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -51,9 +52,12 @@ function App() {
         <Services />
         </div>
         <div ref={contacts} className={styles.contacts}>
-          <h3>Контакти</h3>
+        <Contacts />
         </div>
       </div>
+      <footer>
+        <h5>Powered by <a className={styles.footerLink} href="https://www.innogrowth.net/">InnoGrowth</a></h5>
+      </footer>
     </div>
   );
 }

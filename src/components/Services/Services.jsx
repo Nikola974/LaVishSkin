@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Services.module.css";
 import malesImage from "../../assets/IMG_7307.jpeg";
-import femalesImage from "../../assets/femalesImage.jpg";
+import femalesImage from "../../assets/review.jpg";
 import ServicesOptions from "./ServicesOptions.jsx";
 
 export default function Services() {
@@ -54,7 +54,7 @@ export default function Services() {
 
               <>
                 <ServicesOptions
-                  title="Зона – Tяло"
+                  title="Зона – Тяло"
                   items={[
                     "Гърди - 70",
                     "Ареоли - 25",

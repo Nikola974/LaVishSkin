@@ -5,8 +5,7 @@
 .sections {
   display: flex;
   flex-direction: column;
-  width: 1600px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .home {
@@ -16,17 +15,18 @@
   background-repeat: no-repeat;
 }
 .aboutUs {
-  height: 1200px;
+  height: 1300px;
   background-color: white;
   padding-bottom: 40px;
 }
 .contacts {
   height: 600px;
-  background-color: aqua;
+  background-color: RGB(30 74 105);
+  color: white;
 }
 
 .menuLink {
-  max-width: 1500px;
+  max-width: 100%;
   text-decoration: none;
   display: inline;
   padding: 20px 20px;
@@ -58,7 +58,35 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+  background-color: RGB(30 74 105);
+}
+
+footer h5{
+  color: white;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.footerLink{
+  color: #e74545;
+  font-size: 16px;
+}
+
+.footerLink:hover {
+  color: #e74545;
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .aboutUs {
+    height: 1900px;
+  }
+  .contacts {
+    height: 800px;
+  }
 }
