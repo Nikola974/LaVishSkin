@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../App.module.css";
 
-const Menu = () => (
+const Menu = ({ scrollToSection, home, aboutUs, services, contacts }) => (
     <ul>
       <li onClick={() => scrollToSection(home)} className={styles.menuLink}>
         Начало
