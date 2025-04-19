@@ -86,6 +86,7 @@
   @media (max-width: 768px) {
     .servicesContainer {
       flex-direction: column-reverse;
+      background-attachment: scroll;
     }
     .servicesInfoContainer h2 {
       padding-top: 30px;
