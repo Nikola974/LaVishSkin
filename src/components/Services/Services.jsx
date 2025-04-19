@@ -4,8 +4,10 @@ import malesImage from "../../assets/IMG_7307.jpeg";
 import femalesImage from "../../assets/review.jpg";
 import ServicesOptions from "./ServicesOptions.jsx";
 
+
 export default function Services() {
   const [activeGender, setActiveGender] = useState("female");
+
 
   return (
     

@@ -9,18 +9,18 @@
 }
 
 .home {
-  height: 100vh;
+  min-height: 700px;
   background-image: url("./assets/studio_background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .aboutUs {
-  height: 1300px;
+  min-height: 1300px;
   background-color: white;
   padding-bottom: 40px;
 }
 .contacts {
-  height: 600px;
+  min-height: 400px;
   background-color: RGB(30 74 105);
   color: white;
 }
@@ -84,9 +84,13 @@ footer h5{
 
 @media (max-width: 768px) {
   .aboutUs {
-    height: 1900px;
+    min-height: 2300px;
+    padding-bottom: 80px;
   }
   .contacts {
-    height: 800px;
+    min-height: 700px;
+  }
+  .home {
+    min-height: 300px;
   }
 }

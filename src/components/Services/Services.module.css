@@ -80,10 +80,18 @@
   .hiden {
     max-height: 0;
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(-3px);
   }
 
   @media (max-width: 768px) {
-    
+    .servicesContainer {
+      flex-direction: column-reverse;
+    }
+    .servicesInfoContainer h2 {
+      padding-top: 30px;
+    }
+    .imageContainer img {
+      margin: 50px 0px;
+    }
   }
   

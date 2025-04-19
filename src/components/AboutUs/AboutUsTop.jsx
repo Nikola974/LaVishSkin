@@ -1,9 +1,14 @@
 import styles from "./AboutUs.module.css";
 import aboutUsImg from "../../assets/aboutUsIntro.jpg";
+import useInView from "../../hooks/useInView";
 
 export default function AboutUsTop() {
+  const [ref, visible] = useInView({ threshold: 0.1 });
+
   return (
-    <div className={styles.aboutUsTop}>
+    <div 
+    ref={ref}
+    className={`${styles.aboutUsTop} ${styles.fadeInUp} ${visible ? styles.visible : ""}`}>
       <div className={styles.aboutUsTopImg}>
         <img src={aboutUsImg} alt="About us" />
       </div>

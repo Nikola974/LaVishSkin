@@ -28,7 +28,8 @@ export default function MobileMenu({
       )}
       {toggleMenu && (
         <div className={styles.menuNavigationWrapper}>
-          <div className={styles.menuNavigationWrapperNavigation}>
+
+
             <Menu
               scrollToSection={scrollToSection}
               home={home}
@@ -36,7 +37,8 @@ export default function MobileMenu({
               services={services}
               contacts={contacts}
             />
-          </div>
+
+
         </div>
       )}
     </div>
