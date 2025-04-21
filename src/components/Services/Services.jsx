@@ -13,14 +13,20 @@ export default function Services() {
     
     <div className={styles.servicesContainer}>
       <div className={styles.imageContainer}>
+      <img
+          src={femalesImage}
+          alt="Жени"
+          className={`${styles.image} ${activeGender === "female" ? styles.active : ""}`}
+        />
         <img
-          src={activeGender === "female" ? femalesImage : malesImage}
-          alt="Pricing Visual"
+          src={malesImage}
+          alt="Мъже"
+          className={`${styles.image} ${activeGender === "male" ? styles.active : ""}`}
         />
       </div>
 
       <div className={styles.servicesInfoContainer}>
-        <h2>Видове Процедури</h2>
+        <h2>Процедури</h2>
         <div className={styles.toggleButtons}>
           <button
             className={activeGender === "female" ? styles.active : ""}
