@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .servicesContainer {
 
   background-image: url("../../assets/chair.jpeg");
@@ -8,6 +13,7 @@
   display: flex;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
+  align-items: stretch;
 }
 .imageContainer,
 .servicesInfoContainer {
@@ -15,6 +21,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: auto;
+  height: 90%; /* важно: картинката ще следва родителя */
+  max-width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 0;
+}
+
+.image.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .servicesInfoContainer {
@@ -25,12 +59,7 @@
     padding-bottom: 80px;
 }
 
-.imageContainer img {
-  max-width: 80%;
-  max-height: 600px;
-  object-fit: contain;
-  margin: 20px 0;
-}
+
 
 .toggleButtons {
   margin-bottom: 1rem;
@@ -42,6 +71,7 @@
   background: transparent;
   border: 1px solid #000;
   cursor: pointer;
+  color: black;
 }
 
 .toggleButtons .active {
@@ -69,6 +99,7 @@
     opacity: 0;
     max-height: 0;
     transform: translateY(-10px);
+    background: rgba(0, 0, 0, 0.03)
   }
 
   .shown {
@@ -80,7 +111,7 @@
   .hiden {
     max-height: 0;
     opacity: 1;
-    transform: translateY(-3px);
+    transform: translateY(-1px);
   }
 
   @media (max-width: 768px) {
@@ -91,8 +122,31 @@
     .servicesInfoContainer h2 {
       padding-top: 30px;
     }
+    .imageContainer {
+      min-height: 550px;
+    }
+  
     .imageContainer img {
-      margin: 50px 0px;
+      max-width: 350px;
+      height: 480px;
+      width: 100%;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+
+    .image {
+      max-width: 90%;
+      height: auto;
+    }
+  
+    .servicesInfoContainer h2 {
+      padding-top: 30px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .imageContainer {
+      min-height: 550px;
     }
   }
   

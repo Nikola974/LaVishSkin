@@ -28,17 +28,14 @@ export default function MobileMenu({
       )}
       {toggleMenu && (
         <div className={styles.menuNavigationWrapper}>
-
-
             <Menu
               scrollToSection={scrollToSection}
               home={home}
               aboutUs={aboutUs}
               services={services}
               contacts={contacts}
+              setToggleMenu={setToggleMenu}
             />
-
-
         </div>
       )}
     </div>

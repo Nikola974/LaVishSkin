@@ -5,7 +5,7 @@ import { FaSquareInstagram, FaTiktok, FaSquareFacebook } from "react-icons/fa6";
 const socialMediaLinks = [
   {
     icon: <FaSquareInstagram size={30} />,
-    url: "https://www.facebook.com/people/L%C3%A1-Vish-Skin/61570955392310/",
+    url: "https://www.instagram.com/la_vish_skin/",
   },
   {
     icon: <FaTiktok size={27} />,
@@ -14,7 +14,7 @@ const socialMediaLinks = [
   },
   {
     icon: <FaSquareFacebook size={30} />,
-    url: "https://www.instagram.com/la_vish_skin/",
+    url: "https://www.facebook.com/people/L%C3%A1-Vish-Skin/61570955392310/",
   },
 ];
 
