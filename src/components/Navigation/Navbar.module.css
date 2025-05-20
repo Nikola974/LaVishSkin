@@ -23,21 +23,30 @@
     flex-direction: row;
     margin: auto 0;
   }
+
+
   
   .menuNavigation ul,
-  .menuNavigationWrapper ul {
+  .menuNavigationWrapper ul,
+  .numberButtonText a {
     color: var(--pink-dark);
     text-decoration: none;
     font-weight: 500;
     margin: 0 1rem;
   }
-  
-  .menuNavigation ul li,
-  .menuNavigationWrapper ul li {
+
+  .numberButtonText a {
+    font-weight: bold;
     transition: color 0.3s ease;
   }
   
-  .menuNavigation ul li:hover {
+  .menuNavigation ul li,
+  .menuNavigationWrapper ul li  {
+    transition: color 0.5s ease;
+  }
+  
+  .menuNavigation ul li:hover,
+  .numberButtonText a :hover  {
     color: var(--pink-main);
   }
   

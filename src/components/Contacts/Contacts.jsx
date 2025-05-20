@@ -11,7 +11,7 @@ export default function Contacts() {
                 <div className={styles.contactsInfoContent}>
                     <p><strong>Работно време: </strong>Понеделник - Неделя: 10:00 - 18:00</p>
                     <p><strong>Локация: </strong>гр Варна ул "Студентска" 1а</p>
-                    <p><strong>Телефон: </strong>0888111232 / 0882520999</p>
+                    <p><strong>Телефон: </strong><a href="tel:0882520999">0888111232 / 0882520999</a></p>
                     <SocialIcons />
                 </div>
                 <div classname={styles.contactsMap}>

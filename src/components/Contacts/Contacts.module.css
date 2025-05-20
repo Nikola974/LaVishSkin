@@ -23,6 +23,11 @@
   margin-top: 10px;
 }
 
+.contactsInfoContent a {
+  text-decoration: none;
+  color: white;
+}
+
 .contactsMap {
   display: flex;
   width: 100%;

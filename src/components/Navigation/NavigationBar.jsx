@@ -7,7 +7,7 @@ import styles from "./Navbar.module.css";
 const NumberButton = ({ onClick, text }) => (
     <button onClick={onClick} className={styles.numberButton}>
       <FaPhoneAlt style={{ marginRight: "12px" }} size={22} color="#333333" />
-      <span className={styles.numberButtonText}>{text}</span>
+      <span className={styles.numberButtonText}><a href="tel:0882520999">{text}</a></span>
     </button>
   );
   
