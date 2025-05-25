@@ -7,7 +7,7 @@ import styles from "./Navbar.module.css";
 const NumberButton = ({ onClick, text }) => (
     <button onClick={onClick} className={styles.numberButton}>
       <FaPhoneAlt style={{ marginRight: "12px" }} size={22} color="#333333" />
-      <span className={styles.numberButtonText}><a href="tel:0882520999">{text}</a></span>
+     <span className={styles.numberButtonText}><a href="tel:0882520999">{text}</a></span>
     </button>
   );
   
@@ -31,7 +31,9 @@ const NumberButton = ({ onClick, text }) => (
             text="088 252 0999 / 088 811 1232"
             onClick={() => scrollToSection(contacts)}
           />
-          <SocialIcons />
+          <div className={styles.socialDesktop}>
+            <SocialIcons />
+          </div>
         </div>
       </div>
     );

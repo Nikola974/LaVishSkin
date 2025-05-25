@@ -4,7 +4,6 @@ import malesImage from "../../assets/IMG_7307.jpeg";
 import femalesImage from "../../assets/review.jpg";
 import ServicesOptions from "./ServicesOptions.jsx";
 
-
 const servicesData = {
   female: [
     {
@@ -90,25 +89,24 @@ const servicesData = {
   ],
 };
 
+
 export default function Services() {
   const [activeGender, setActiveGender] = useState("female");
 
+
   return (
+    
     <div className={styles.servicesContainer}>
       <div className={styles.imageContainer}>
-        <img
+      <img
           src={femalesImage}
           alt="Жени"
-          className={`${styles.image} ${
-            activeGender === "female" ? styles.active : ""
-          }`}
+          className={`${styles.image} ${activeGender === "female" ? styles.active : ""}`}
         />
         <img
           src={malesImage}
           alt="Мъже"
-          className={`${styles.image} ${
-            activeGender === "male" ? styles.active : ""
-          }`}
+          className={`${styles.image} ${activeGender === "male" ? styles.active : ""}`}
         />
       </div>
 
@@ -130,14 +128,10 @@ export default function Services() {
         </div>
 
         <ul className={styles.priceList}>
-          {servicesData[activeGender].map((section, index) => (
-            <ServicesOptions
-              key={index}
-              title={section.title}
-              items={section.items}
-            />
-          ))}
-        </ul>
+  {servicesData[activeGender].map((section, index) => (
+    <ServicesOptions key={index} title={section.title} items={section.items} />
+  ))}
+</ul>
       </div>
     </div>
   );

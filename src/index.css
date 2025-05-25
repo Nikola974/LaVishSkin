@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,7 +17,6 @@
   --pink-dark: #f48fb1;    /* slightly bolder */
   --accent-gold: #fdd835;  /* optional accent */
 }
-
 
 body {
   margin: 0 auto;

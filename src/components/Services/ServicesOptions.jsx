@@ -12,8 +12,8 @@ export default function ServicesOptions({ title, items }) {
   return (
     <>
       <li onClick={handleClick} className={styles.toggleService}>
-      <span>{title}</span>
-      <span className={`${styles.icon} ${isVisible ? styles.rotate : ""}`}>
+        <span>{title}</span>
+        <span className={`${styles.icon} ${isVisible ? styles.rotate : ""}`}>
           <FaChevronDown />
         </span>
       </li>

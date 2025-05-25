@@ -87,21 +87,18 @@ body {
 }
 
 .toggleService {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.05);
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
-  margin-left: 0.5rem;
   display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  transition: transform 0.5s ease;
+  transition: transform 0.9s ease;
 }
 
 .rotate {
