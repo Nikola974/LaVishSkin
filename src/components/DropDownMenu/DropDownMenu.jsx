@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../../App.module.css";
 import { useState } from "react";
+import SocialIcons from "../Navigation/Socials";
+
 
 const Menu = ({ scrollToSection, home, aboutUs, services, contacts, setToggleMenu }) => (
     <ul>
@@ -15,6 +17,9 @@ const Menu = ({ scrollToSection, home, aboutUs, services, contacts, setToggleMen
       </li>
       <li onClick={() => {scrollToSection(contacts); setToggleMenu(false)}} className={styles.menuLink}>
         Контакти
+      </li>
+      <li className={styles.menuLink}>
+      <SocialIcons />
       </li>
     </ul>
   );

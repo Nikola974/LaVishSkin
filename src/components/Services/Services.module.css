@@ -87,10 +87,22 @@ body {
 }
 
 .toggleService {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.05);
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  transition: transform 0.9s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .itemsWrapper {

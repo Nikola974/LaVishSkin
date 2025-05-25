@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Services.module.css";
+import { FaChevronDown } from "react-icons/fa";
 
 export default function ServicesOptions({ title, items }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +12,10 @@ export default function ServicesOptions({ title, items }) {
   return (
     <>
       <li onClick={handleClick} className={styles.toggleService}>
-        {title}
+        <span>{title}</span>
+        <span className={`${styles.icon} ${isVisible ? styles.rotate : ""}`}>
+          <FaChevronDown />
+        </span>
       </li>
       <div
         className={`${styles.itemsWrapper} ${
