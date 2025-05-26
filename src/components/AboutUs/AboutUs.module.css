@@ -216,4 +216,7 @@
     max-width: 100%;
     min-height: 400px;
   }
+  .resBtn{
+    margin-bottom: 40px;
+  }
 }
