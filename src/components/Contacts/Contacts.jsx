@@ -14,7 +14,7 @@ export default function Contacts() {
                     <p><strong>Телефон: </strong><a href="tel:0882520999">0888111232 / 0882520999</a></p>
                     <SocialIcons />
                 </div>
-                <div classname={styles.contactsMap}>
+                <div className={styles.contactsMap}>
                     <LocationMap />
                 </div>
             </div>
