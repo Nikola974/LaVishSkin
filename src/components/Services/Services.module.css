@@ -3,17 +3,23 @@ body {
   overflow-x: hidden;
 }
 
-.servicesContainer {
+.services {
   background-image: url("../../assets/chair.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
-  align-items: stretch;
+  padding-bottom: 40px;
 }
+
+.servicesContainer {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 60px;
+}
+
 .imageContainer,
 .servicesInfoContainer {
   flex: 1;
@@ -34,7 +40,7 @@ body {
 .image {
   width: auto;
   height: 90%; /* важно: картинката ще следва родителя */
-  max-width: 100%;
+  max-width: 500px;
   max-height: 1050px;
   object-fit: contain;
   position: absolute;
@@ -142,12 +148,14 @@ body {
   .servicesContainer {
     flex-direction: column-reverse;
     background-attachment: scroll;
+    padding-bottom: 20px;
   }
   .servicesInfoContainer h2 {
     padding-top: 30px;
   }
   .imageContainer {
     min-height: 550px;
+    display: none;
   }
 
   .imageContainer img {
