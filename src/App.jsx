@@ -29,7 +29,7 @@ function App() {
   return (
     <div className={styles.App}>
       <ScrollToTop />
-      <Popup image={promoImage} />
+      <Popup />
       <div className={stylesNav.container}>
         <NavigationBar
           scrollToSection={scrollToSection}
