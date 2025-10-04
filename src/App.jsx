@@ -8,6 +8,8 @@ import NavigationBar from "./components/Navigation/NavigationBar.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Services from "./components/Services/Services.jsx";
 import Contacts from "./components/Contacts/Contacts.jsx";
+import Popup from "./components/PopUpImage/PopUpImg.jsx";
+
 
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,6 +29,7 @@ function App() {
   return (
     <div className={styles.App}>
       <ScrollToTop />
+      <Popup image={promoImage} />
       <div className={stylesNav.container}>
         <NavigationBar
           scrollToSection={scrollToSection}
