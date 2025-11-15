@@ -1,7 +1,7 @@
 import styles from "./AboutUs.module.css";
 import aboutUsImg from "../../assets/aboutUsIntro.jpg";
 import useInView from "../../hooks/useInView";
-import buttonStyles from "./Reservebutton.module.css";
+import buttonStyles from "./ReserveButton.module.css";
 
 export default function AboutUsTop() {
   const [ref, visible] = useInView({ threshold: 0.1 });

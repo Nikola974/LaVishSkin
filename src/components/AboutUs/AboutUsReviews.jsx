@@ -3,7 +3,7 @@ import aboutUsImg from "../../assets/laserReview.png";
 import useInView from "../../hooks/useInView";
 import { ReactGoogleReviews } from "react-google-reviews";
 import "react-google-reviews/dist/index.css";
-import buttonStyles from "./Reservebutton.module.css";
+import buttonStyles from "./ReserveButton.module.css";
 
 function Reviews() {
   const featurableWidgetId = "fdfd5a65-a78b-4d7d-b9e8-84484b13b639";
