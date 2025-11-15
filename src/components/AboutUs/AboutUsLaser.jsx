@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AboutUsLaser.module.css";
-import buttonStyles from "./Reservebutton.module.css";
+import buttonStyles from "./ReserveButton.module.css";
 
 import bg1 from "../../assets/bg1.png";
 import bg2 from "../../assets/bg2.png";
