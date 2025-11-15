@@ -9,6 +9,8 @@ import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Services from "./components/Services/Services.jsx";
 import Contacts from "./components/Contacts/Contacts.jsx";
 import Popup from "./components/PopUpImage/PopUpImg.jsx";
+import HomeSection from "./components/Home/HomeSection.jsx";
+import OurServices from "./components/Services/OurServices.jsx";
 
 
 function App() {
@@ -49,9 +51,12 @@ function App() {
         />
       </div>
       <div className={styles.sections}>
-        <div ref={home} className={styles.home}></div>
+        <div ref={home} className={styles.home}>
+        <HomeSection />
+        </div>
         <AboutUs aboutUsRef={aboutUs} />
         <div ref={services} className={styles.services}>
+        <OurServices />
         <Services />
         </div>
         <div ref={contacts} className={styles.contacts}>

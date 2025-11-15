@@ -1,0 +1,137 @@
+.gallery {
+  padding: 80px 8%;
+  background-color: #fafafa;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.title span {
+  color: #e6528a;
+}
+
+/* 🖼️ Responsive grid for 8 images */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Each image wrapper */
+.imageWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* --- Subtle vertical staggering without overlap --- */
+.pos1 { transform: translateY(20px); }
+.pos2 { transform: translateY(-20px); }
+.pos3 { transform: translateY(50px); }
+.pos4 { transform: translateY(-30px); }
+.pos5 { transform: translateY(20px); }
+.pos6 { transform: translateY(-30px); }
+.pos7 { transform: translateY(40px); }
+.pos8 { transform: translateY(-10px); }
+
+/* Hover effect */
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+/* --- Responsive adjustments --- */
+.carousel {
+  display: none;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0; /* full screen */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px); /* blur background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: zoom-out;
+}
+
+.lightboxImage {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: none; /* hide desktop grid */
+  }
+
+  .carousel {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; /* prevent vertical scroll */
+  gap: 16px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 16px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain !important; /* stops bouncing horizontally */
+  }
+
+  .carouselItem {
+    flex: 0 0 90%;
+    scroll-snap-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carouselImage {
+  width: 100%;
+  height: auto; /* let height adjust naturally */
+  max-height: 400px; /* optional cap */
+  object-fit: contain;
+  display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+  .carouselItem {
+    flex: 0 0 50%; /* tablet: 2 images */
+    height: auto;
+    max-height: 400px;
+  }
+}
+
+/* OPTIONAL: small device tweak */
+@media (max-width: 480px) {
+  .carouselImage {
+    height: 300px;
+  }
+}
