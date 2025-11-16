@@ -57,8 +57,15 @@ const AboutUsLaser = () => {
           ))}
         </div>
 
-        <div>
-          <a className={buttonStyles.fancy}>
+        <div
+          onClick={() =>
+            window.open("https://studio24.bg/l-vish-skin-s11111", "_blank")
+          }
+        >
+          <a
+            className={buttonStyles.fancy}
+            href="#"
+          >
             <span className={buttonStyles.topKey}></span>
             <span className={buttonStyles.text}>Запази Час</span>
             <span className={buttonStyles.bottomKeyFirst}></span>

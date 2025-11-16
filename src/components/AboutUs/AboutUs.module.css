@@ -194,9 +194,7 @@
   .aboutUsTopInfo {
     /* width: 80%; */
     padding-bottom: 40px;
-    .aboutUsTopInfo {
-     max-width: 350px;
-}
+     max-width: 320px;
   }
 
   .aboutUsBottomImg {
