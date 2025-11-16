@@ -89,6 +89,14 @@
     display: none; /* hide desktop grid */
   }
 
+  .gallery {
+    padding-top: 40px;
+  }
+
+  .title{
+    padding-bottom: 0px;
+  }
+
   .carousel {
   display: flex;
   overflow-x: auto;

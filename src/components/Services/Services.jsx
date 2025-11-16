@@ -18,7 +18,6 @@ function Reviews() {
 
 export default function Services() {
   const [activeGender, setActiveGender] = useState("female");
-  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div className={styles.services}>
@@ -45,7 +44,6 @@ export default function Services() {
             className={`${styles.image} ${
               activeGender === "female" ? styles.active : ""
             }`}
-            onClick={() => setSelectedImage(femalesImage)}
           />
           <img
             src={malesImage}
@@ -53,22 +51,8 @@ export default function Services() {
             className={`${styles.image} ${
               activeGender === "male" ? styles.active : ""
             }`}
-            onClick={() => setSelectedImage(malesImage)}
           />
         </div>
-
-        {selectedImage && (
-          <div
-            className={styles.lightbox}
-            onClick={() => setSelectedImage(null)}
-          >
-            <img
-              src={selectedImage}
-              alt="Full view"
-              className={styles.lightboxImage}
-            />
-          </div>
-        )}
 
         <div className={styles.servicesInfoContainer}>
           {/*<h2>Процедури</h2>*/}
@@ -84,8 +68,7 @@ export default function Services() {
           </ul>
         </div>
       </div>
-      <div
-        className={styles.buttonDiv}
+      <div className={styles.buttonDiv}
         onClick={() =>
           window.open("https://studio24.bg/l-vish-skin-s11111", "_blank")
         }
