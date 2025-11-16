@@ -84,7 +84,7 @@ footer h5{
 @media (max-width: 768px) {
   .aboutUs {
     min-height: 2300px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
   .contacts {
     min-height: 700px;

@@ -17,40 +17,46 @@ export default function AboutUsReviews() {
   const [ref, visible] = useInView({ threshold: 0.1 });
 
   return (
-    <div 
-          className={`${styles.aboutUsReviews} ${styles.fadeInUp} ${
-        visible ? styles.visible : ""
-      }`}>
     <div
-      ref={ref}
-      className={styles.aboutUsTop}
+      className={`${styles.aboutUsReviews} ${styles.fadeInUp} ${
+        visible ? styles.visible : ""
+      }`}
     >
-      <div className={styles.aboutUsTopImg}>
-        <img src={aboutUsImg} alt="About us" />
-      </div>
-      <div className={styles.aboutWrapper}>
-        <div className={styles.aboutUsTopInfo}>
-          <h3>⭐⭐⭐⭐⭐ Стотици доволни клиенти във Варна</h3>
-          <p>
-            Все повече хора във Варна ни се доверяват заради професионализма,
-            вниманието и видимите резултати още след първите процедури.
-          </p>
-          <p>
-            В La Vish Skin се грижим не просто да имате гладка кожа, а и
-            увереност и комфорт в ежедневието.
-          </p>
+      <div ref={ref} className={styles.aboutUsTop}>
+        <div className={styles.aboutUsTopImg}>
+          <img src={aboutUsImg} alt="About us" />
         </div>
-        <div className={styles.resBtn}>
-                <a className={buttonStyles.fancy}>
-                  <span className={buttonStyles.topKey}></span>
-                  <span className={buttonStyles.text}>Запази Час</span>
-                  <span className={buttonStyles.bottomKeyFirst}></span>
-                  <span className={buttonStyles.bottomKeySecond}></span>
-                </a>
+        <div className={styles.aboutWrapper}>
+          <div className={styles.aboutUsTopInfo}>
+            <h3>⭐⭐⭐⭐⭐ Стотици доволни клиенти във Варна</h3>
+            <p>
+              Все повече хора във Варна ни се доверяват заради професионализма,
+              вниманието и видимите резултати още след първите процедури.
+            </p>
+            <p>
+              В La Vish Skin се грижим не просто да имате гладка кожа, а и
+              увереност и комфорт в ежедневието.
+            </p>
+          </div>
+          <div
+            className={styles.resBtn}
+            onClick={() =>
+              window.open("https://studio24.bg/l-vish-skin-s11111", "_blank")
+            }
+          >
+            <a
+              className={buttonStyles.fancy}
+              href="#"
+            >
+              <span className={buttonStyles.topKey}></span>
+              <span className={buttonStyles.text}>Запази Час</span>
+              <span className={buttonStyles.bottomKeyFirst}></span>
+              <span className={buttonStyles.bottomKeySecond}></span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    {/* <div className={styles.googleReviews}><Reviews /></div> */}
+      {/* <div className={styles.googleReviews}><Reviews /></div> */}
     </div>
   );
 }

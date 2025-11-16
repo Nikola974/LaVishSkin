@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { ReactGoogleReviews } from "react-google-reviews";
 import "react-google-reviews/dist/index.css";
 import styles from "./OurServices.module.css";
@@ -6,17 +7,18 @@ import femalesImage from "../../assets/femalesImage.jpg";
 import promoBaner from "../../assets/promobaner.png";
 import ServicesOptions from "./ServicesOptions.jsx";
 import { servicesData } from "./ServiceData.js";
+import buttonStyles from "../AboutUs/ReserveButton.module.css";
 
-
-   function Reviews() {
+function Reviews() {
   const featurableWidgetId = "fdfd5a65-a78b-4d7d-b9e8-84484b13b639";
   return (
     <ReactGoogleReviews layout="carousel" featurableId={featurableWidgetId} />
   );
-} 
-
+}
 
 export default function Services() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <div className={styles.services}>
       <h2 className={styles.sectionTitle}>Процедури</h2>
@@ -29,7 +31,12 @@ export default function Services() {
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Лазерна Епилация Жени</h3>
           <div className={styles.imageContainer}>
-            <img src={promoBaner} alt="Жени" className={styles.image} />
+            <img
+              src={promoBaner}
+              alt="Жени"
+              className={styles.image}
+              onClick={() => setSelectedImage(promoBaner)}
+            />
           </div>
           <ul className={styles.priceList}>
             {servicesData.female.map((section, index) => (
@@ -46,7 +53,12 @@ export default function Services() {
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Лазерна Епилация Мъже</h3>
           <div className={styles.imageContainer}>
-            <img src={promoBaner} alt="Мъже" className={styles.image} />
+            <img
+              src={promoBaner}
+              alt="Мъже"
+              className={styles.image}
+              onClick={() => setSelectedImage(promoBaner)}
+            />
           </div>
           <ul className={styles.priceList}>
             {servicesData.male.map((section, index) => (
@@ -58,14 +70,35 @@ export default function Services() {
             ))}
           </ul>
         </div>
+
+              {selectedImage && (
+        <div
+          className={styles.lightbox}
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            alt="Full view"
+            className={styles.lightboxImage}
+          />
+        </div>
+      )}
+      
       </div>
-      <a className={styles.fancy} href="#">
-        <span className={styles.topKey}></span>
-        <span className={styles.text}>Запази Час</span>
-        <span className={styles.bottomKeyFirst}></span>
-        <span className={styles.bottomKeySecond}></span>
-      </a>
-       <Reviews />
+      <div
+        className={styles.buttonDiv}
+        onClick={() =>
+          window.open("https://studio24.bg/l-vish-skin-s11111", "_blank")
+        }
+      >
+        <a className={buttonStyles.fancy} href="#">
+          <span className={buttonStyles.topKey}></span>
+          <span className={buttonStyles.text}>Запази Час</span>
+          <span className={buttonStyles.bottomKeyFirst}></span>
+          <span className={buttonStyles.bottomKeySecond}></span>
+        </a>
+      </div>
+      <Reviews />
     </div>
   );
 }

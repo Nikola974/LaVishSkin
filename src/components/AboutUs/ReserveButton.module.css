@@ -96,3 +96,13 @@
  left: -2px;
  width: 0px;
 }
+
+.fancy:hover .bottomKeyFirst {
+  right: -2px;   /* slide out to the left */
+  width: 0;      /* collapse */
+}
+
+.fancy:hover .bottomKeySecond {
+  right: -2px;
+  width: 0;
+}
