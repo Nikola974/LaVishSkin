@@ -191,6 +191,15 @@
   .socialDesktop {
     display: none;
   }
+
+  .menuNavigationWrapper { 
+    background-color: #e1e1e1;
+  }
+
+  .menuNavigationWrapper ul li {
+    color: black;
+    margin: 0 auto !important;
+  }
 }
 
 @media screen and (max-width: 550px) {
