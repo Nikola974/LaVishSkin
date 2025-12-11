@@ -200,10 +200,8 @@ body {
   }
 
   .image {
-    width: 100%;
+    max-width: 90%;
     height: auto;
-    max-width: 400px;
-    max-height: none;
   }
 
   .servicesInfoContainer h2 {
