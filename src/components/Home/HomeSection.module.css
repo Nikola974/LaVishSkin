@@ -10,6 +10,7 @@
   align-items: center;
   padding-right: 6%;
   color: #fff;
+  margin-bottom: 90px;
 }
 
 /* optional overlay for readability */
@@ -39,14 +40,14 @@
 
 .titleDescription {
       font-size: 2.37rem;
+
 }
 
 .description {
   font-size: 1.rem;
   line-height: 1.6;
-    font-weight: 700;
+  font-weight: 700;
   color: #f1f1f1;
-    text-align: left;
 }
 
 .fancy {

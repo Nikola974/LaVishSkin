@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { ReactGoogleReviews } from "react-google-reviews";
 import "react-google-reviews/dist/index.css";
 import styles from "./OurServices.module.css";
-import malesImage from "../../assets/candela.jpg";
-import femalesImage from "../../assets/femalesImage.jpg";
+import malesImage from "../../assets/mensBanner.png";
+import femalesImage from "../../assets/ladiesBanner.png";
 import promoBaner from "../../assets/promobaner.png";
 import ServicesOptions from "./ServicesOptions.jsx";
 import { servicesData } from "./ServiceData.js";
@@ -32,10 +32,10 @@ export default function Services() {
           <h3 className={styles.columnTitle}>Лазерна Епилация Жени</h3>
           <div className={styles.imageContainer}>
             <img
-              src={promoBaner}
+              src={femalesImage}
               alt="Жени"
               className={styles.image}
-              onClick={() => setSelectedImage(promoBaner)}
+              onClick={() => setSelectedImage(femalesImage)}
             />
           </div>
           <ul className={styles.priceList}>
@@ -54,10 +54,10 @@ export default function Services() {
           <h3 className={styles.columnTitle}>Лазерна Епилация Мъже</h3>
           <div className={styles.imageContainer}>
             <img
-              src={promoBaner}
+              src={malesImage}
               alt="Мъже"
               className={styles.image}
-              onClick={() => setSelectedImage(promoBaner)}
+              onClick={() => setSelectedImage(malesImage)}
             />
           </div>
           <ul className={styles.priceList}>
