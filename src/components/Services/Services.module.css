@@ -173,6 +173,9 @@ body {
 @media (max-width: 768px) {
   .services {
     display: block;
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-position: center;
   }
   .sectionTitle {
     margin-top: 0px;
