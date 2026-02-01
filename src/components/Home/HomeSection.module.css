@@ -156,6 +156,10 @@
  width: 0;
 }
 
+.bannerPercentage {
+  font-size: 24px;
+}
+
 /* 📱 Center content on mobile */
 @media (max-width: 768px) {
   .home {

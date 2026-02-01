@@ -11,7 +11,7 @@ const HomeSection = () => {
           Лазер №1 в света Candela GentleLase Pro
         </h1>
         <h2 className={styles.description}>
-          “Нова година,<br/> по-гладка кожа!”
+          “<span>–50%</span> на пакети лазерна епилация,<br/> в месеца на любовта!”
         </h2>
         <div
           onClick={() =>

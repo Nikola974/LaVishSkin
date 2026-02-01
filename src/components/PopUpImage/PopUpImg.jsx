@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Popup.module.css";
-import promoImage from "../../assets/popUpBannerJanuary.png";
+import promoImage from "../../assets/popUpBannerFebruary.png";
 
 export default function Popup() {
   const [showPopup, setShowPopup] = useState(false);
