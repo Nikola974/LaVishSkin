@@ -30,14 +30,14 @@ export default function Services() {
       <div className={styles.columns}>
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Лазерна Епилация Жени</h3>
-          <div className={styles.imageContainer}>
+         {/* <div className={styles.imageContainer}>
             <img
               src={femalesImage}
               alt="Жени"
               className={styles.image}
               onClick={() => setSelectedImage(femalesImage)}
             />
-          </div>
+          </div> */}
           <ul className={styles.priceList}>
             {servicesData.female.map((section, index) => (
               <ServicesOptions
@@ -52,14 +52,14 @@ export default function Services() {
         {/* Male column */}
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Лазерна Епилация Мъже</h3>
-          <div className={styles.imageContainer}>
+          {/* <div className={styles.imageContainer}>
             <img
               src={malesImage}
               alt="Мъже"
               className={styles.image}
               onClick={() => setSelectedImage(malesImage)}
             />
-          </div>
+          </div> */}
           <ul className={styles.priceList}>
             {servicesData.male.map((section, index) => (
               <ServicesOptions
